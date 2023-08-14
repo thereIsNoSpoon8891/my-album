@@ -18,7 +18,7 @@ mongoose.connect(process.env.MONGO_URI)
 
 app.use("/api/authenticate", require('./routes/userRouter'))
 app.use("/api/authenticate", expressjwt({secret: process.env.SECRET, algorithms:['HS256'] }))
-app.use("/api/upload", require('./routes/uploadRoute'))
+app.use("/api/authenticate/upload", require('./routes/uploadRoute'))
 
 
     //error handling
