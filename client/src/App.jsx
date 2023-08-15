@@ -1,5 +1,6 @@
 import { useState } from 'react'
-
+import Authenticate from './components/Authenticate'
+import UploadImage from './components/UploadImage'
 
 
 
@@ -7,9 +8,10 @@ function App() {
 
 
   return (
-    <div>
-test
-    </div>
+    <>
+      <Authenticate />
+      <UploadImage />
+    </>
   )
 }
 
